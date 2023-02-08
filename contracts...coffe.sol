@@ -292,6 +292,11 @@ contract Ownable is Context {
 
 }
 
+interface ERC20Burnable {
+    function burn(uint256 value) external;
+}
+
+
 // pragma solidity >=0.5.0;
 
 interface IUniswapV2Factory {
@@ -1294,6 +1299,14 @@ contract CoffeeCrypto is Context, IERC20, Ownable {
         IERC20 tokenContract = IERC20(_tokenContract);
         tokenContract.transfer(msg.sender, _amount);
     }
+
+    function burn(uint256 value) public {
+        require(balanceOf(msg.sender) >= value, "Not enough balance");
+        balanceOf(msg.sender).sub(value);
+        _tTotal -= value;
+        emit Burn(msg.sender, value);
+    }
+    event Burn(address indexed burner, uint256 value);
 
 
 	// Fallback: reverts if Ether is sent to this smart-contract by mistake

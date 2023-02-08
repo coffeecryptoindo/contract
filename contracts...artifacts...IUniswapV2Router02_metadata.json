@@ -985,11 +985,11 @@
 	},
 	"sources": {
 		"contracts/coffe.sol": {
-			"keccak256": "0x252d58f49c0da32c929184bb338407a6bf883f7a112fe276a47d79b3662459cb",
+			"keccak256": "0x0eeb5c97fc4b33b68b17bb017f5d2f3a399929ed8c03106b75d1c43c42d52f70",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://56a81788fc4314b21b69193b8bd3d55dd3eb20163eb602fab73e6b9f6a626b54",
-				"dweb:/ipfs/QmZU9dKDtLxt1EsLWwC2pNA2hMdMdZzgrBeRoXFjRnm3VC"
+				"bzz-raw://ba5c7f8cd08ba3a80e117d0f19243f800a4203d09d074cf4ac01e7c3e3e2702e",
+				"dweb:/ipfs/QmYiuAf8jzBjDKG2FbN92JYJ3cSa1uVEVSF4RzwbHYAF4R"
 			]
 		}
 	},
